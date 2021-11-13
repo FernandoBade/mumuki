@@ -5,6 +5,12 @@ procedure RetirarAzulComMedo() {
 }
 
 // Exercícío 2
+procedure RetirarAzulComMedo() {
+  if (haPedras(Azul)) {
+    Retirar(Azul)
+  } 
+}
+
 // Exercícío 3
 // Exercícío 4
 // Exercícío 5

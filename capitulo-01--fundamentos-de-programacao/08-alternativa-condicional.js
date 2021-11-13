@@ -1,5 +1,9 @@
 // 8. Alternativa Condicional
 // Exercícío 1
+procedure RetirarAzulComMedo() {
+  Retirar(Azul)
+}
+
 // Exercícío 2
 // Exercícío 3
 // Exercícío 4

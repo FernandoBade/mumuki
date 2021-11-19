@@ -1,9 +1,38 @@
 // 11. Repetição condicional
 // Exercícío 1
+procedure IrAoExtremo(direcao) {
+  while (podeMover(direcao)) {
+    Mover(direcao)
+  }
+}
+
 // Exercícío 2
+procedure SairDaLinhaVerde(direcao){
+  while (haPedras(Verde)){
+    if (podeMover(direcao)){
+      Mover(direcao)
+    }
+  }
+}
+
 // Exercícío 3
+procedure AteOInfinito() {
+  while (podeMover(Leste)) {
+    Colocar(Vermelho)
+  }
+}
+
 // Exercícío 4
+procedure PraFrenteEPraTras() {
+  while (podeMover(Norte)) {
+    Mover(Norte)
+    Colocar(Verde)
+    Mover(Sul)
+  }
+}
+
 // Exercícío 5
+
 // Exercícío 6
 // Exercícío 7
 // Exercícío 8

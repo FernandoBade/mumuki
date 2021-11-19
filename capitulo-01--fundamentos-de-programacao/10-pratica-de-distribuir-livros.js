@@ -62,5 +62,24 @@ procedure FazerTrabalhoNaEscola (){
 }
 
 // Exercícío 7
+function haEscolaPublica(){
+  return (quantidadeEstudantes() > 0)
+  }
+  
 // Exercícío 8
+procedure TrabalharNaRua(comprimento){
+  repeat(comprimento) {
+    Mover(Leste)
+    if (haEscolaPublica()){
+      FazerTrabalhoNaEscola()
+    }
+  }MoverN(comprimento, Oeste)
+}  
+
 // Exercícío 9
+procedure PercorrerCidade(){
+  repeat(nroPedras(Vermelho)){
+    Mover(Norte) 
+    TrabalharNaRua(nroPedras(Verde))
+}
+}

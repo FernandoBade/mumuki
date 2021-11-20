@@ -84,6 +84,27 @@ procedure DesmatarPara(direcao){
 }
 
 // Exercícío 11
-
+procedure RecolherPlantasNaFila(){
+  while(podeMover(Leste)){
+    if(haPlantaComestivel()){
+      RecolherPlanta()
+      Mover(Leste)
+    } if (not haPlantaComestivel()){
+      Mover(Leste)
+    } 
+  } if(haPlantaComestivel()){
+    RecolherPlanta()
+  }
+}
 
 // Exercícío 12
+procedure CavarTunel(){
+  while (haParedeAo(Leste)){
+    if (podeMover(Leste)){
+      QuebrarParede()
+      Mover(Leste)
+    } 
+  }if (podeMover(Leste)){
+    Mover(Leste)
+  }
+}

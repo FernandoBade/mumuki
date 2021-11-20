@@ -23,9 +23,27 @@ function anterior(numero){
    }
    
 // Exercícío 3
+4 + 5
+absoluto(-20)
+funcaoLouca(1, 2, 3)
+
 // Exercícío 4
+function ePar(i){
+if (i%2 === 0){
+   return true
+}
+}
+
 // Exercícío 5
+5 + 6
+5 === 6
+8 > 6
+!true
+false / true
+
 // Exercícío 6
+
+
 // Exercícío 7
 // Exercícío 8
 // Exercícío 9

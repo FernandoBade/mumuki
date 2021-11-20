@@ -40,11 +40,50 @@ procedure DesdobrarTapetePara(direcao) {
 }
 
 // Exercícío 6
+procedure LevantarTapetePara(direcao){
+  while (podeMover(direcao)) {
+    Mover(direcao)
+    LimparERetirarTapete() 
+  }
+}
 
+procedure LimparERetirarTapete(){
+  RetirarTodas(Verde)
+  RetirarTodas(Azul)
+  RetirarTodas(Preto)
+  RetirarTodas(Vermelho)
+}
 
 // Exercícío 7
+function haParedeAo(direcao){
+  while (podeMover(direcao)){
+    Mover(direcao)
+  }return (haParede())
+}
+
 // Exercícío 8
+procedure ProcurarComida(direcao){
+  while (not haPlantaComestivel()){
+    Mover(direcao)
+  }
+}
+
 // Exercícío 9
+procedure EscalarAteDescanso(){
+  while(haParedeAo(Leste)){
+    Mover(Norte)
+  } Mover(Leste)
+}
+
 // Exercícío 10
+procedure DesmatarPara(direcao){
+  while(podeMover(direcao)){
+    UsarFoice()
+    Mover(direcao)
+  } UsarFoice()
+}
+
 // Exercícío 11
+
+
 // Exercícío 12

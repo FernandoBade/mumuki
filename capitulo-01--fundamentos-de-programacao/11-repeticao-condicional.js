@@ -32,8 +32,16 @@ procedure PraFrenteEPraTras() {
 }
 
 // Exercícío 5
+procedure DesdobrarTapetePara(direcao) {
+  while (podeMover(direcao)) {
+    Mover(direcao)
+    Colocar(Vermelho)  
+  }
+}
 
 // Exercícío 6
+
+
 // Exercícío 7
 // Exercícío 8
 // Exercícío 9

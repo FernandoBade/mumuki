@@ -56,11 +56,63 @@ function quantoCarrega(atual, carregamento){
 }
 
 // Exercícío 9
-// Exercícío 10
-// Exercícío 11
-// Exercícío 12
-// Exercícío 13
-// Exercícío 14
-// Exercícío 15
-// Exercícío 16
+function estaEntre(x, y, z){
+    return x < y && x > z || y === 0
+}
 
+function estaForaDoAlcance(x, y, z){
+  return x < y || x > z
+}
+
+// Exercícío 10
+function eFimDeSemana(dia){
+return (dia === "sábado" || dia === "domingo");
+}
+
+// Exercícío 11
+function longitudeNomeCompleto(x, y){
+  return (longitude(x) + longitude(y) + 1).toString()
+}
+
+// Exercícío 12
+function gritar(x){
+  return ("¡"+ convertirEmMaiuscula(x) + "!")
+}
+
+// Exercícío 13
+function maximo(x, y){
+  if (x > y){
+    return x
+  } else if (x < y){
+    return y
+  }
+}
+
+// Exercícío 14
+function signo(x){
+  if (x > 0){
+    return 1
+  } if (x === 0){
+    return 0
+  } if (x < 0){
+    return -1
+  }
+}
+
+// Exercícío 15
+function eNumeroDeSorte(x){
+  return (x > 0) && (x!==15) && (x%2 === 0 || x%3 === 0)
+}
+
+// Exercícío 16
+function medalhaDeAcordoComPosto(x){
+  if (x === 1){
+    return "ouro"
+  } if (x === 2){
+    return "prata"
+  } if (x === 3){
+    return "bronze"
+  } else {
+    return "nada"
+  }
+}

@@ -21,13 +21,13 @@ function linhasAquarelaDoBrasil (){
 
 // Exercícío 4
 function linhasAquarelaDoBrasil() {
-    imprimir("Brasil, meu Brasil Brasileiro,");
-    imprimir("Meu mulato inzoneiro,");
-    imprimir("Vou cantar-te nos meus versos:");
-    imprimir("O Brasil, samba que dá");
-    imprimir("Bamboleio, que faz gingar;");
-    imprimir("O Brasil do meu amor,");
-    imprimir("Terra de Nosso Senhor.");
+  imprimir("Brasil, meu Brasil Brasileiro,");
+  imprimir("Meu mulato inzoneiro,");
+  imprimir("Vou cantar-te nos meus versos:");
+  imprimir("O Brasil, samba que dá");
+  imprimir("Bamboleio, que faz gingar;");
+  imprimir("O Brasil do meu amor,");
+  imprimir("Terra de Nosso Senhor.");
 }
 
 // Exercícío 5

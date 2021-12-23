@@ -1,7 +1,5 @@
 // 5.Arrays
 // Exercícío 1
-
-
 // Exercícío 2
 // Exercícío 3
 // Exercícío 4

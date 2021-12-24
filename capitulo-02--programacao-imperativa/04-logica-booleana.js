@@ -45,6 +45,21 @@ function ePeripatetico(x, y, z){
 => true
 
 // Exercícío 6
+let sab = "sábado"
+let dom = "domingo"
+
+function eFimDeSemana(dia) {
+  return  dia === sab || dia ===  dom
+}
+
+function eDiaDeSemana (dia){
+  return !eFimDeSemana || dia !== sab
+}
+
+  function estaFechado(eFeriado, dia, horario) {
+    return eFeriado || !eDiaDeSemana(dia) ||(!dentroDoHorarioBancario(horario));
+}
+
 // Exercícío 7
 // Exercícío 8
 // Exercícío 9

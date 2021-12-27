@@ -45,24 +45,67 @@ function ePeripatetico(x, y, z){
 => true
 
 // Exercícío 6
-let sab = "sábado"
+let sab = "sabado"
 let dom = "domingo"
 
 function eFimDeSemana(dia) {
-  return  dia === sab || dia ===  dom
+  return  dia === sab || dia === dom
 }
 
 function eDiaDeSemana (dia){
-  return !eFimDeSemana || dia !== sab
+  return !eFimDeSemana
 }
 
-  function estaFechado(eFeriado, dia, horario) {
-    return eFeriado || !eDiaDeSemana(dia) ||(!dentroDoHorarioBancario(horario));
+function estaFechado(eFeriado, dia, horario) {
+  return eFeriado || eFimDeSemana(dia) || !dentroDoHorarioBancario(horario)
 }
 
 // Exercícío 7
+function mesmaMae(nome1,nome2){
+  return maeDe(nome1) === maeDe(nome2);
+}
+
+function mesmoPai(nome1,nome2){
+  return paiDe(nome1)===paiDe(nome2);
+}
+
+function mesmosPais(nome1,nome2){
+  return mesmaMae(nome1,nome2) && mesmoPai(nome1,nome2);
+}
+
+function meioIrmaos(nome1,nome2){
+  return mesmaMae(nome1,nome2)&& !mesmosPais(nome1,nome2) || mesmosPais(nome1,nome2) && !mesmosPais(nome1,nome2);
+}
+
 // Exercícío 8
+   meioIrmaos(arcadio, aurelianoJose)
+=> true
+   meioIrmaos(aurelianoSegundo, remedios)
+=> false
+   meioIrmaos(aurelianoJose, remedios)
+=> false
+
 // Exercícío 9
+function xor(x,y){
+  return x !== y
+}
+
 // Exercícío 10
+   pagaComCartao(true, "visa", 320)
+=> false
+   pagaComCartao(false, "visa", 80)
+=> true
+   pagaComCartao(true, "mastercard", 215)
+=> false
+   pagaComCartao(true, "mastercard", 32)
+=> true
+   
 // Exercícío 11
+function podeSeAposentar(idade, sexo, anosContribuicao){
+  return (idade >= 60 && sexo ==="F") && anosContribuicao >=30 || (idade >= 65 && sexo ==="M") && anosContribuicao >=30
+}
+
 // Exercícío 12
+function podeSubir (altura, acompanhada, cardiaco){
+  return ((altura >= 1.5) || (altura >= 1.2 && acompanhada)) && !cardiaco
+}

@@ -1,5 +1,4 @@
 // Capítulo 2: Programação imperativa
-
 // 1.Funções e Tipos de Dados
 // Exercícío 1
 
